@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Sunflower:300");
+
+* {
+    margin: auto;
+    padding: 0;
+    font-family: "Sunflower", sans-serif;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.sub-container-register {
+    max-width: 25vw;
+    width: 100%;
+    height: 37rem;
+    margin: 150px auto 0;
+    display: flex;
+    background: #fff;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.125);
+}
+
+.sub-container-register .login-form {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px 35px 0;
+    position: relative;
+}
+
+.sub-container-register .login-form .title {
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.login-form .label {
+    color: #524a4a;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.login-form .input {
+    margin: 5px 0 15px;
+    width: 100%;
+    padding: 8px;
+}
+
+.login-form .forgot a {
+    color: #000;
+    font-size: 18px;
+}
+
+.btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    padding: 3px;
+    color: #000;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: solid 1px;
+}
+.btn:hover {
+    background-color: #cc3300;
+    color: #fff;
+}
+.btn-cancel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    padding: 3px;
+    color: #000;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: solid 1px;
+}
+.btn-cancel:hover {
+    background-color: #cc3300;
+    color: #fff;
+}
+
+.message {
+    position: absolute;
+    top: 3rem;
+    right: 5rem;
+    padding: 1rem;
+}
+
+.modal-dialog {
+    height: 71vh;
+    margin-top: 16rem;
+}
+
+@media (max-width: 500px) {
+    .sub-container-register {
+        flex-direction: column;
+        max-width: 300px;
+        height: auto;
+        margin-top: 50px;
+    }
+    .sub-container-register .login-form {
+        width: 100%;
+        padding: 20px 35px 0;
+    }
+    .sub-container-register .login-form .title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .login-form .input {
+        margin-bottom: 10px;
+    }
+
+    .login-form .forgot {
+        margin-bottom: 55px;
+    }
+    .btn {
+        margin-top: 20px;
+        padding: 10px;
+    }
+}
