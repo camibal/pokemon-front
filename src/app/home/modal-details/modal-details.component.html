@@ -1,33 +1,55 @@
-<div class="container-full">
-    <div class="container-modal-detail">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title" id="exampleModalLabel">{{pokemon.name}}</h1>
-            </div>
-            <div class="modal-body">
+<div class="container-details">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title" id="exampleModalLabel">{{pokemon.name}}</h1>
+        </div>
+        <div class="modal-body">
+            <img class="img-detail" src="{{pokemonImg}}" alt="">
+            <img class="img-detail" src="{{pokemonImg2}}" alt="">
+            <img class="img-detail" src="{{pokemonImg3}}" alt="">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" [routerLink]="['/index']">Close</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column-details">
+            <div class="card">
                 <div class="card-img">
-                    <img class="img-detail" src="{{pokemonImg}}" alt="">
+                    #00{{pokemon.id}}
                 </div>
-                <div class="type">
-                    <h5 class="modal-title">Id: {{pokemon.id}}</h5>
-                </div>
-                <div class="id">
-                    <h5 class="modal-title">Type: {{pokemonType}}</h5>
-                </div>
-                <div class="height">
-                    <h5 class="modal-title">Height: {{pokemon.height}}</h5>
-                </div>
-                <div class="weight">
-                    <h5 class="modal-title">Weight: {{pokemon.weight}}</h5>
-                </div>
-                <div class="weight">
-                    <h5 class="modal-title">Moves: {{pokemonMoves}}</h5>
-                </div>
-
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal"
-                    [routerLink]="['/index']">Close</button>
+        </div>
+        <div class="column-details">
+            <div class="card">
+                <h3 style="display: block;">Type</h3>
+                <div class="card-img">
+                    {{pokemonType}}
+                </div>
+            </div>
+        </div>
+        <div class="column-details">
+            <div class="card">
+                <h3 style="display: block;">Height</h3>
+                <div class="card-img">
+                    {{pokemon.height}}
+                </div>
+            </div>
+        </div>
+        <div class="column-details">
+            <div class="card">
+                <h3 style="display: block;">Weight</h3>
+                <div class="card-img">
+                    {{pokemon.weight}}
+                </div>
+            </div>
+        </div>
+        <div class="column-details">
+            <div class="card">
+                <h3 style="display: block;">Moves</h3>
+                <div class="card-img">
+                    {{pokemonMoves}}
+                </div>
             </div>
         </div>
     </div>

@@ -15,6 +15,8 @@ export class ModalDetailsComponent implements OnInit {
 
   pokemon: any = '';
   pokemonImg = '';
+  pokemonImg2 = '';
+  pokemonImg3 = '';
   pokemonType = [];
   pokemonMoves = [];
 
@@ -34,7 +36,9 @@ export class ModalDetailsComponent implements OnInit {
     this.pokemonService.getPokemons(id).subscribe(res => {
       // console.log(res)
       this.pokemon = res;
-      this.pokemonImg = this.pokemon.sprites.front_default;
+      this.pokemonImg = this.pokemon.sprites.other.dream_world.front_default;
+      this.pokemonImg2 = this.pokemon.sprites.back_shiny;
+      this.pokemonImg3 = this.pokemon.sprites.front_default;
       this.pokemonType = res.types[0].type.name;
       this.pokemonMoves = res.moves[0].move.name;
 

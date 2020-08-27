@@ -1,8 +1,5 @@
-<div class="search" style="position: absolute; top: 5rem; right: 5rem">
-  <!-- <input type="text" (keyup)="applyFilter($event)" placeholder="Filter"> -->
-  <!-- <input type="text" class="form-control" placeholder="Search Here" [(ngModel)]="term"> -->
+<div class="search">
   <input type="text" [(ngModel)]="pokemonSearch" placeholder="Filter for name">
-  <!-- <input type="text" [(ngModel)]="typeSearch" placeholder="Filter for type"> -->
 </div>
 <div class="scroll">
   <div class="container-pokemon">
@@ -12,7 +9,7 @@
           <h3 style="display: block;">{{item.name}}</h3>
           <h3 style="display: block;">{{item.order}}</h3>
           <div class="card-img">
-            <img src="{{item.image}}" alt="pokemon" class="img-pokemon" width="100" height="100">
+            <img src="{{item.image}}" alt="pokemon" class="img-pokemon">
           </div>
           <h4>Type:</h4>
           <div class="row justify-content-center">

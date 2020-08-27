@@ -27,7 +27,7 @@ export class IndexComponent implements OnInit {
       this.pokemonService.getPokemons(i).subscribe(res => {
         pokemonData = {
           position: i,
-          image: res.sprites.front_default,
+          image: res.sprites.other.dream_world.front_default,
           name: res.name,
           types: res.types
         };
