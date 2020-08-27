@@ -1,15 +1,12 @@
 <div class="container-details">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h1 class="modal-title" id="exampleModalLabel">{{pokemon.name}}</h1>
+    <div class="container-img-details">
+        <div class="title-img-detail">
+            <h1>{{pokemon.name}}</h1>
         </div>
-        <div class="modal-body">
-            <img class="img-detail" src="{{pokemonImg}}" alt="">
+        <img class="img-detail" src="{{pokemonImg}}" class="img-detail-1" alt="">
+        <div class="img-detail-2">
             <img class="img-detail" src="{{pokemonImg2}}" alt="">
-            <img class="img-detail" src="{{pokemonImg3}}" alt="">
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" [routerLink]="['/index']">Close</button>
+            <img class="img-detail" src="{{pokemonImg3}}" class="ml-5" alt="">
         </div>
     </div>
     <div class="row">
@@ -53,4 +50,5 @@
             </div>
         </div>
     </div>
+    <button class="btn-return" [routerLink]="['/index']">Return</button>
 </div>
