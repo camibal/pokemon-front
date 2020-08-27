@@ -1,11 +1,118 @@
-nav {
-    width: 100%;
+header {
     position: fixed;
     top: 0;
-    z-index: 100;
+    margin: 2rem 0rem 0rem 0rem;
+    padding: 0.2rem;
+    box-sizing: border-box;
+    border-radius: 0px 0px 15px 15px;
+    z-index: 10;
 }
-a {
+
+.elivi {
+    list-style-type: none; /* Elimina viñetas, sangrias, etc */
+}
+
+.fac {
+    display: inline; /* Comvierte lista vertical en fila */
+    padding: 0rem 0.7rem 0rem 0.7rem; /* Separa los elementos de la fila */
+    line-height: 1.8rem;
+}
+
+nav {
+    margin: 0rem 0rem 0rem 0rem;
+}
+
+nav a {
+    border-radius: 5px;
+    padding: 2px 5px 5px 5px;
+    text-decoration: none;
+    color: #000000; /* No visitado */
+    background: #ffffff;
+    font-weight: 600;
     cursor: pointer;
+}
+nav a.visited {
+    text-decoration: none;
+    color: #696969; /* Visitado */
+}
+nav a.active {
+    text-decoration: none;
+    color: #cc3300; /* Ultimo visitado */
+}
+nav a:hover {
+    text-decoration: none;
+    color: #ffffff; /* Color paso raton */
+    background: #cc3300;
+}
+
+#menuA {
+    position: absolute;
+    margin: 2.5rem 0.5rem 0.5rem -0.4rem;
+    float: left;
+    font-weight: 900;
+    font-family: verdana, arial; /*tipo de letra*/
+    width: 23%;
+    min-width: 200px;
+    line-height: 20pt; /*separación entre lineas*/
+    z-index: 4;
+}
+
+.showme {
+    /* Capa emergente */
+    position: fixed;
+    margin: -1rem 0rem 0rem 1rem;
+    padding: 0.5rem 1.5rem 0.5rem 0.3rem;
+    width: 12rem;
+    // background-color: #f1f1f1;
+    display: none;
+    text-align: left;
+    line-height: 2.5rem;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    list-style-type: none;
+}
+.showhim:hover .showme {
+    display: block;
+}
+
+.menumov {
+    position: absolute;
+    text-align: center;
+    margin: -3rem 0rem 0rem 0.5rem;
+    padding: 0.3rem 1rem 0.3rem 1rem;
     text-decoration: none;
     color: #000;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: #f1f1f1;
+}
+/* ---------------------------------------------------------- */
+@media screen and (min-width: 1000px) {
+    #menuA {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #menuA {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .elivi {
+        display: none;
+    }
+
+    #menuA {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #menuA {
+        display: block;
+    }
 }

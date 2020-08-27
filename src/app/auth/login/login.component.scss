@@ -62,9 +62,6 @@ body {
 }
 
 .btn {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2rem;
     width: 50%;
     padding: 3px;
     color: #000;
@@ -72,7 +69,7 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     cursor: pointer;
-    border: solid 1px ;
+    border: solid 1px;
 }
 
 .btn:hover {
@@ -87,11 +84,22 @@ body {
     padding: 1rem;
 }
 
+@media (max-width: 1199px) {
+    .sub-container {
+        max-width: 55vw;
+    }
+}
+@media (max-width: 767px) {
+    .sub-container {
+        max-width: 75vw;
+    }
+}
+
 @media (max-width: 500px) {
     .sub-container {
         flex-direction: column;
         max-width: 300px;
-        height: auto;
+        min-height: 32rem;
         margin-top: 50px;
     }
     .sub-container .login-form {
@@ -108,9 +116,5 @@ body {
 
     .login-form .forgot {
         margin-bottom: 55px;
-    }
-    .btn {
-        margin-top: 20px;
-        padding: 10px;
     }
 }

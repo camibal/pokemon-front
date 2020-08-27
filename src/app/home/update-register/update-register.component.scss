@@ -21,7 +21,7 @@ body {
     max-width: 25vw;
     width: 100%;
     height: 37rem;
-    margin: 150px auto 0;
+    margin: 100px auto 0;
     display: flex;
     background: #fff;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.125);
@@ -108,6 +108,17 @@ body {
     margin-top: 16rem;
 }
 
+@media(max-width: 991px){
+    .sub-container-register{
+        max-width: 45vw;
+    }
+}
+@media(max-width: 767px){
+    .sub-container-register{
+        max-width: 60vw;
+    }
+}
+
 @media (max-width: 500px) {
     .sub-container-register {
         flex-direction: column;
@@ -132,6 +143,5 @@ body {
     }
     .btn {
         margin-top: 20px;
-        padding: 10px;
     }
 }

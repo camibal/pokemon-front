@@ -107,6 +107,16 @@ body {
     height: 71vh;
     margin-top: 16rem;
 }
+@media (max-width: 1199px) {
+    .sub-container-register {
+        max-width: 50vw;
+    }
+}
+@media (max-width: 767px) {
+    .sub-container-register {
+        max-width: 75vw;
+    }
+}
 
 @media (max-width: 500px) {
     .sub-container-register {
@@ -132,6 +142,5 @@ body {
     }
     .btn {
         margin-top: 20px;
-        padding: 10px;
     }
 }

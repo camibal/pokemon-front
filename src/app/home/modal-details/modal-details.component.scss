@@ -41,7 +41,7 @@
 
 /* Remove extra left and right margins, due to padding in columns */
 .row {
-    margin: 0 -5px;
+    margin: 0 -5px 40px 0;
 }
 
 /* Clear floats after the columns */
@@ -88,8 +88,8 @@
 
 .btn-return {
     position: absolute;
-    top: 5rem;
-    right: 5rem;
+    top: 2rem;
+    right: 2rem;
     border-radius: 10px;
     padding: 0.5rem;
 }
@@ -120,7 +120,7 @@
     .img-detail-1 {
         width: 50%;
     }
-    .btn-return {    
-        right: 2rem
+    .btn-return {
+        right: 2rem;
     }
 }
